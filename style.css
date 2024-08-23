@@ -4,12 +4,18 @@
 @import url("./src/css/footer.css");
 
 :root {
-  /* --common-blue: ##1d2552; */
+  --common-blue: #1d2552;
 }
 /* Reusable classes start */
 .full-width {
   padding-left: 20px;
   padding-right: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .full-width {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .container {
   width: 100%;
@@ -82,6 +88,31 @@
 .underline {
   text-decoration: underline;
 }
+.btn,
+button {
+  --bg: #3a52a6;
+  --color: #ffffff;
+  --radius: 43px;
+  border: none;
+  outline: none;
+  background: var(--bg);
+  color: var(--color);
+  border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+  padding: 14px 42px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+}
+.btn:hover,
+button:hover {
+  --bg: #23336c;
+}
 
 /* Main content css start */
 .main-content-full-width {
@@ -96,3 +127,27 @@
   background-size: cover;
 }
 /* Main content css end */
+
+/* Disclaimer section css start */
+.disclaimer-full-width {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--common-blue);
+}
+.disclaimer-content p {
+  color: white;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 1366px) {
+  .disclaimer-content p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .disclaimer-content p {
+    font-size: 12px;
+  }
+}
+/* Disclaimer section css end */

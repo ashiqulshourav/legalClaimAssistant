@@ -1,6 +1,3 @@
-:root {
-  --common-blue: #1d2552;
-}
 .header-full-width {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -12,23 +9,12 @@
   height: auto;
 }
 
-@media only screen and (min-width: 1025px) {
-}
-
-@media only screen and (max-width: 1440px) {
-}
-
 @media only screen and (max-width: 1366px) {
   .header img {
     width: 180px;
   }
 }
 
-@media only screen and (min-width: 1025px) {
-}
-
-@media only screen and (max-width: 1024px) {
-}
 @media only screen and (max-width: 767px) {
   .header img {
     width: 100px;
@@ -37,8 +23,4 @@
   .header-full-width {
     padding: 5px 20px;
   }
-}
-@media only screen and (min-width: 551px) {
-}
-@media only screen and (max-width: 550px) {
 }
