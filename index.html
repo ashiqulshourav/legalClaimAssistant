@@ -73,12 +73,9 @@
                   <div class="step step-6">
                     <span>6</span>
                   </div>
-                  <div class="step step-7">
-                    <span>7</span>
-                  </div>
                 </div>
                 <div class="form-steps">
-                  <div class="form-step active">
+                  <div class="form-step">
                     <span class="form-label">
                       Were you (or a loved one) exposed to Roundup Weed
                       Killer?</span
@@ -183,7 +180,7 @@
                       >
                     </div>
                   </div>
-                  <div class="form-step">
+                  <div class="form-step hasDropdown">
                     <span class="form-label">
                       Which of the following cancers do you (or a loved one)
                       suffer from?</span
@@ -203,7 +200,7 @@
                     <span class="form-label">
                       What year were you (or a loved one) diagnosed?</span
                     >
-                    <div class="input-group dropdown">
+                    <div class="input-group dropdown relative">
                       <span class="dropdown-text">Please select one</span>
                       <ul class="dropdown-options">
                         <li>2001</li>
@@ -214,7 +211,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="form-step personal-info">
+                  <div class="form-step personal-info active">
                     <span class="form-label">
                       Thanks for answering the questions. Please provide us with
                       your basic contact information where we can reach
@@ -227,28 +224,32 @@
                         name="firstName"
                         placeholder="First Name"
                       />
+                      <span class="not-valid" id="firstNameError"></span>
                       <input
                         type="text"
                         id="lastName"
                         name="lastName"
                         placeholder="Last Name"
                       />
+                      <span class="not-valid" id="lastNameError"></span>
                       <input
                         type="email"
                         id="email"
                         name="email"
                         placeholder="example@domain.com"
                       />
+                      <span class="not-valid" id="emailError"></span>
                       <input
                         type="tel"
                         id="tel"
                         name="tel"
                         placeholder="000-00-00000"
                       />
+                      <span class="not-valid" id="phoneError"></span>
                     </div>
                   </div>
                   <div class="form-step-btn flex justify-end">
-                    <button class="form-btn">Next</button>
+                    <button type="submit" class="form-btn">Next</button>
                   </div>
                   <div class="terms-condition">
                     <span

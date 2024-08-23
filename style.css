@@ -116,6 +116,11 @@ button:hover {
   background-color: #0eac60;
 }
 
+button:disabled {
+  cursor: not-allowed;
+  background-color: #b6decb;
+}
+
 /* Main content css start */
 .main-content-full-width {
   padding-top: 10px;
@@ -175,7 +180,7 @@ button:hover {
   background: #e0e0e0;
 }
 .steps > .step {
-  width: calc(100% / 7);
+  width: calc(100% / 6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -349,7 +354,27 @@ button:hover {
   width: 100%;
   padding: 5px 10px;
   display: block;
-  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.personal-info input:not(:first-child) {
+  margin-top: 10px;
+}
+
+.personal-info input.not-valid {
+  border-color: red;
+  color: red;
+}
+.personal-info .not-valid:not(.active) {
+  display: none;
+}
+.personal-info .not-valid.active {
+  color: red;
+  font-size: 12px;
 }
 @media only screen and (max-width: 767px) {
   .main-contents {
