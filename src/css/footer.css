@@ -2,13 +2,15 @@
   --common-blue: #1d2552;
 }
 
-footer {
+.footer-full-width {
   background: var(--common-blue);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 footer * {
   color: white;
 }
-.footer-full-width {
-  padding-top: 65px;
-  padding-bottom: 65px;
+
+.footer p {
+  font-size: 14px;
 }
