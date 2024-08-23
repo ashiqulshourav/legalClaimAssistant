@@ -94,30 +94,26 @@
 .underline {
   text-decoration: underline;
 }
-.btn,
 button {
-  --bg: #3a52a6;
-  --color: #ffffff;
-  --radius: 43px;
-  border: none;
-  outline: none;
-  background: var(--bg);
-  color: var(--color);
-  border-radius: var(--radius);
-  -webkit-border-radius: var(--radius);
-  -moz-border-radius: var(--radius);
-  -ms-border-radius: var(--radius);
-  -o-border-radius: var(--radius);
-  padding: 14px 42px;
-  cursor: pointer;
   font-size: 24px;
   font-weight: 500;
+  background: #01bf62;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  padding: 8px 30px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
   line-height: 1;
-  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.btn:hover,
 button:hover {
-  --bg: #23336c;
+  background-color: #0eac60;
 }
 
 /* Main content css start */
@@ -203,6 +199,11 @@ button:hover {
 
 .form-steps {
   padding: 20px 10px;
+}
+.terms-condition:not(.active),
+.form-step-btn:not(.active),
+.form-step:not(.active) {
+  display: none;
 }
 
 .form-label {
@@ -342,6 +343,13 @@ button:hover {
 }
 .dropdown-options li.selected {
   background-color: #ddd;
+}
+
+.personal-info input {
+  width: 100%;
+  padding: 5px 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 @media only screen and (max-width: 767px) {
   .main-contents {
