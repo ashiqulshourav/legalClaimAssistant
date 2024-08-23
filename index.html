@@ -74,194 +74,218 @@
                     <span>6</span>
                   </div>
                 </div>
-                <div class="form-steps">
-                  <div class="form-step">
-                    <span class="form-label">
-                      Were you (or a loved one) exposed to Roundup Weed
-                      Killer?</span
-                    >
-                    <div class="input-group input-radio">
-                      <input
-                        type="radio"
-                        name="exposed"
-                        id="directExposed"
-                        value="direct exposed"
-                      />
-                      <label for="directExposed" style="--color: #01bf62"
-                        >Yes, directly exposed</label
+                <form action="#" class="main-form">
+                  <div class="form-steps">
+                    <div class="form-step active">
+                      <span class="form-label">
+                        Were you (or a loved one) exposed to Roundup Weed
+                        Killer?</span
+                      >
+                      <div class="input-group input-radio">
+                        <input
+                          type="radio"
+                          name="exposed"
+                          id="directExposed"
+                          value="direct exposed"
+                        />
+                        <label for="directExposed" style="--color: #01bf62"
+                          >Yes, directly exposed</label
+                        >
+                      </div>
+                      <div class="input-group input-radio">
+                        <input
+                          type="radio"
+                          name="exposed"
+                          id="inDirectExposed"
+                          value="indirect exposed"
+                        />
+                        <label for="inDirectExposed" style="--color: #5897fb"
+                          >Yes, indirectly exposed</label
+                        >
+                      </div>
+                      <div class="input-group input-radio">
+                        <input
+                          type="radio"
+                          name="exposed"
+                          id="notExposed"
+                          value="not exposed"
+                        />
+                        <label for="notExposed" style="--color: #bc0e10"
+                          >Not exposed</label
+                        >
+                      </div>
+                    </div>
+                    <div class="form-step">
+                      <span class="form-label">
+                        Have you (or a loved one) retained an attorney regarding
+                        Roundup?</span
+                      >
+                      <div class="input-group input-radio">
+                        <input
+                          type="radio"
+                          name="atorny"
+                          id="atornyNo"
+                          value="no"
+                        />
+                        <label for="atornyNo" style="--color: #01bf62"
+                          >No</label
+                        >
+                      </div>
+                      <div class="input-group input-radio">
+                        <input
+                          type="radio"
+                          name="atorny"
+                          id="atornyYes"
+                          value="yes"
+                        />
+                        <label for="atornyYes" style="--color: #bc0e10"
+                          >Yes</label
+                        >
+                      </div>
+                    </div>
+                    <div class="form-step">
+                      <span class="form-label">
+                        How long have you (or a loved one) used or been exposed
+                        to Roundup Weed Killer?</span
+                      >
+                      <div class="input-group input-radio">
+                        <input
+                          type="radio"
+                          name="exposedDuration"
+                          id="lessThanOneYear"
+                        />
+                        <label for="lessThanOneYear" style="--color: #01bf62"
+                          >Less than 1 year</label
+                        >
+                      </div>
+                      <div class="input-group input-radio">
+                        <input type="radio" name="exposedDuration" id="1year" />
+                        <label for="1year" style="--color: #01bf62"
+                          >1 Year</label
+                        >
+                      </div>
+                      <div class="input-group input-radio">
+                        <input
+                          type="radio"
+                          name="exposedDuration"
+                          id="2orMoreYears"
+                        />
+                        <label for="2orMoreYears" style="--color: #01bf62"
+                          >2 or more years</label
+                        >
+                      </div>
+                      <div class="input-group input-radio">
+                        <input
+                          type="radio"
+                          name="exposedDuration"
+                          id="noExposed"
+                        />
+                        <label for="noExposed" style="--color: #01bf62"
+                          >No exposed</label
+                        >
+                      </div>
+                    </div>
+                    <div class="form-step hasDropdown">
+                      <span class="form-label">
+                        Which of the following cancers do you (or a loved one)
+                        suffer from?</span
+                      >
+                      <div class="input-group dropdown relative">
+                        <input
+                          type="hidden"
+                          name="breastCancer"
+                          id="breastCancer"
+                        />
+                        <span class="dropdown-text">Please select one</span>
+                        <ul class="dropdown-options">
+                          <li>Brast Cansar 1</li>
+                          <li>Brast Cansar 2</li>
+                          <li>Brast Cansar 3</li>
+                          <li class="">Brast Cansar 4</li>
+                          <li>Brast Cansar 5</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="form-step">
+                      <span class="form-label">
+                        What year were you (or a loved one) diagnosed?</span
+                      >
+                      <div class="input-group dropdown relative">
+                        <input
+                          type="hidden"
+                          name="diagnosedYear"
+                          id="diagnosedYear"
+                        />
+                        <span class="dropdown-text">Please select one</span>
+                        <ul class="dropdown-options">
+                          <li>2001</li>
+                          <li>2002</li>
+                          <li class="">2003</li>
+                          <li>2004</li>
+                          <li>2005</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="form-step personal-info">
+                      <span class="form-label">
+                        Thanks for answering the questions. Please provide us
+                        with your basic contact information where we can reach
+                        you.</span
+                      >
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          id="firstName"
+                          name="firstName"
+                          placeholder="First Name"
+                        />
+                        <span class="not-valid" id="firstNameError"></span>
+                        <input
+                          type="text"
+                          id="lastName"
+                          name="lastName"
+                          placeholder="Last Name"
+                        />
+                        <span class="not-valid" id="lastNameError"></span>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          placeholder="example@domain.com"
+                        />
+                        <span class="not-valid" id="emailError"></span>
+                        <input
+                          type="tel"
+                          id="tel"
+                          name="tel"
+                          placeholder="000-00-00000"
+                        />
+                        <span class="not-valid" id="phoneError"></span>
+                      </div>
+                    </div>
+                    <div class="form-step-btn flex justify-end">
+                      <button class="form-btn">Next</button>
+                    </div>
+                    <div class="terms-condition">
+                      <span
+                        >By clicking 'Do I Qualify' and submitting my request, I
+                        confirm that I have read and agree to the
+                        <a href="#"> privacy policy </a> of this site and that I
+                        consent to receive emails, phone calls and/or text
+                        message offers and communications from
+                        LegalClaimAssistant</span
                       >
                     </div>
-                    <div class="input-group input-radio">
-                      <input
-                        type="radio"
-                        name="exposed"
-                        id="inDirectExposed"
-                        value="indirect exposed"
-                      />
-                      <label for="inDirectExposed" style="--color: #5897fb"
-                        >Yes, indirectly exposed</label
-                      >
-                    </div>
-                    <div class="input-group input-radio">
-                      <input
-                        type="radio"
-                        name="exposed"
-                        id="notExposed"
-                        value="not exposed"
-                      />
-                      <label for="notExposed" style="--color: #bc0e10"
-                        >Not exposed</label
-                      >
+                    <div class="success-text">
+                      <p>
+                        Thank You for Requesting Your Free Case Evaluation!
+                        Please look out for a call from one of our
+                        representatives. They will have important information
+                        regarding your case and eligibility.
+                      </p>
                     </div>
                   </div>
-                  <div class="form-step">
-                    <span class="form-label">
-                      Have you (or a loved one) retained an attorney regarding
-                      Roundup?</span
-                    >
-                    <div class="input-group input-radio">
-                      <input
-                        type="radio"
-                        name="atorny"
-                        id="atornyNo"
-                        value="no"
-                      />
-                      <label for="atornyNo" style="--color: #01bf62">No</label>
-                    </div>
-                    <div class="input-group input-radio">
-                      <input
-                        type="radio"
-                        name="atorny"
-                        id="atornyYes"
-                        value="yes"
-                      />
-                      <label for="atornyYes" style="--color: #bc0e10"
-                        >Yes</label
-                      >
-                    </div>
-                  </div>
-                  <div class="form-step">
-                    <span class="form-label">
-                      How long have you (or a loved one) used or been exposed to
-                      Roundup Weed Killer?</span
-                    >
-                    <div class="input-group input-radio">
-                      <input
-                        type="radio"
-                        name="exposedDuration"
-                        id="lessThanOneYear"
-                      />
-                      <label for="lessThanOneYear" style="--color: #01bf62"
-                        >Less than 1 year</label
-                      >
-                    </div>
-                    <div class="input-group input-radio">
-                      <input type="radio" name="exposedDuration" id="1year" />
-                      <label for="1year" style="--color: #01bf62">1 Year</label>
-                    </div>
-                    <div class="input-group input-radio">
-                      <input
-                        type="radio"
-                        name="exposedDuration"
-                        id="2orMoreYears"
-                      />
-                      <label for="2orMoreYears" style="--color: #01bf62"
-                        >2 or more years</label
-                      >
-                    </div>
-                    <div class="input-group input-radio">
-                      <input
-                        type="radio"
-                        name="exposedDuration"
-                        id="noExposed"
-                      />
-                      <label for="noExposed" style="--color: #01bf62"
-                        >No exposed</label
-                      >
-                    </div>
-                  </div>
-                  <div class="form-step hasDropdown">
-                    <span class="form-label">
-                      Which of the following cancers do you (or a loved one)
-                      suffer from?</span
-                    >
-                    <div class="input-group dropdown relative">
-                      <span class="dropdown-text">Please select one</span>
-                      <ul class="dropdown-options">
-                        <li>Brast Cansar 1</li>
-                        <li>Brast Cansar 2</li>
-                        <li>Brast Cansar 3</li>
-                        <li class="">Brast Cansar 4</li>
-                        <li>Brast Cansar 5</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="form-step">
-                    <span class="form-label">
-                      What year were you (or a loved one) diagnosed?</span
-                    >
-                    <div class="input-group dropdown relative">
-                      <span class="dropdown-text">Please select one</span>
-                      <ul class="dropdown-options">
-                        <li>2001</li>
-                        <li>2002</li>
-                        <li class="">2003</li>
-                        <li>2004</li>
-                        <li>2005</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="form-step personal-info active">
-                    <span class="form-label">
-                      Thanks for answering the questions. Please provide us with
-                      your basic contact information where we can reach
-                      you.</span
-                    >
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        id="firstName"
-                        name="firstName"
-                        placeholder="First Name"
-                      />
-                      <span class="not-valid" id="firstNameError"></span>
-                      <input
-                        type="text"
-                        id="lastName"
-                        name="lastName"
-                        placeholder="Last Name"
-                      />
-                      <span class="not-valid" id="lastNameError"></span>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="example@domain.com"
-                      />
-                      <span class="not-valid" id="emailError"></span>
-                      <input
-                        type="tel"
-                        id="tel"
-                        name="tel"
-                        placeholder="000-00-00000"
-                      />
-                      <span class="not-valid" id="phoneError"></span>
-                    </div>
-                  </div>
-                  <div class="form-step-btn flex justify-end">
-                    <button type="submit" class="form-btn">Next</button>
-                  </div>
-                  <div class="terms-condition">
-                    <span
-                      >By clicking 'Do I Qualify' and submitting my request, I
-                      confirm that I have read and agree to the
-                      <a href="#"> privacy policy </a> of this site and that I
-                      consent to receive emails, phone calls and/or text message
-                      offers and communications from LegalClaimAssistant</span
-                    >
-                  </div>
-                </div>
-                <form action="#" class="main-form"></form>
+                </form>
               </div>
             </div>
           </div>

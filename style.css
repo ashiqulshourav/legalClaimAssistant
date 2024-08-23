@@ -369,12 +369,15 @@ button:disabled {
   border-color: red;
   color: red;
 }
-.personal-info .not-valid:not(.active) {
+.personal-info span.not-valid:not(.active) {
   display: none;
 }
 .personal-info .not-valid.active {
   color: red;
   font-size: 12px;
+}
+.success-text:not(.active) {
+  display: none;
 }
 @media only screen and (max-width: 767px) {
   .main-contents {
