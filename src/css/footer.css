@@ -1,0 +1,14 @@
+:root {
+  --common-blue: #1d2552;
+}
+
+footer {
+  background: var(--common-blue);
+}
+footer * {
+  color: white;
+}
+.footer-full-width {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
